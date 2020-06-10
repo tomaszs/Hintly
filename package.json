@@ -21,7 +21,7 @@
         "vscode": "^1.26.0"
     },
     "categories": [
-        "Other"
+        "Linters", "Other", "Programming Languages", "Debuggers"
     ],
     "activationEvents": [
         "*"
