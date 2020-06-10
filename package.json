@@ -1,6 +1,7 @@
 {
     "name": "assistant",
     "displayName": "Assistant",
+    "icon": "images/assistant.png",
     "description": "Boost your development by providing custom tips displayed in the code",
     "version": "0.3.0",
     "publisher": "tomasz-smykowski",
