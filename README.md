@@ -36,4 +36,13 @@ When saved, typing 'tom" in a source code file will display "hello" text above. 
 
 ## Installation
 
+1. Go to Visual Studio Code
+2. Go to Extensions from left side bar
+3. Find "Assistant" by Tomasz Smykowski
+4. Install it
+5. Copy above rule and test if it works
+6. Boost your development speed and quality
+
+Extension in the Visual Studio Code Marketplace:
+
 https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
