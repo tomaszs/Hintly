@@ -34,6 +34,12 @@ Example workspace configuration:
 
 When saved, typing 'tom" in a source code file will display "hello" text above. You can use RegEx to write more advanced rules.
 
+## Demo
+
+Regex: (@Input\\(\\) .*)(: false;). Prevents from bad boolean Input declaration in Angular component
+
+![](demo.gif)
+
 ## Installation
 
 1. Go to Visual Studio Code
