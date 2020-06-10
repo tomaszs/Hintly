@@ -1,6 +1,7 @@
 {
     "name": "assistant",
     "displayName": "Assistant",
+    "keywords": ["productivity", "visual studio code", "rules", "notes", "uberlinter", "regex"],
     "icon": "images/assistant.png",
     "description": "Boost your development by providing custom tips displayed in the code",
     "version": "0.6.0",

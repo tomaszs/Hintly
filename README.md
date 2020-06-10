@@ -52,3 +52,7 @@ Regex: @Input\\(\\) .*: false;. Prevents from bad boolean Input declaration in A
 Extension in the Visual Studio Code Marketplace:
 
 https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
+
+## Autor
+
+Tomasz Smykowski (http://tomasz-smykowski.com)
