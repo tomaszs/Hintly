@@ -2,30 +2,38 @@
 
 Boost your development by providing custom tips displayed in the code.
 
-To write rules, open your workspace settings (CTRL + ALT + P) -> Workspace settings. In the section settings add a item "assistant" and under it an item "rules" and under it an array of rules.
+1. Open Visual Studio Code Workspace
+2. If you don't have it, choose file "Save Workspace As..."
+3. Press CTRL + ALT + P to open options
+4. Find "Preferences: Open Workspace Settings (JSON) and open it
+5. In the section settings add a item "assistant" and under it an item "rules" and under it an array of rules.
 
-Each rule should contain regex field - a string with a regex rule, and a message that should displayed when the rule is trigerred.
+Each rule should contain:
+regex - a string with a regex rule
+message - text that should be displayed when the rule is trigerred
 
-## Features
+Example workspace configuration:
 
-Assists
+```
 
-## Requirements
+{
+	.....
+	"settings": {
+		"assistant": {
+			"rules": [
+				{
+					"regex": "tom",
+					"message": "hello"
+				}
+			]
+    }
+	},
+  .....
+}
+```
 
-None
+When saved, typing 'tom" in a source code file will display "hello" text above. You can use RegEx to write more advanced rules.
 
-## Extension Settings
+## Installation
 
-nog
-
-## Known Issues
-
-none
-
-## Release Notes
-
-Nothing
-
-### 1.0.0
-
-Firt version
+https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
