@@ -2,7 +2,7 @@
     "name": "assistant",
     "displayName": "Assistant",
     "description": "Boost your development by providing custom tips displayed in the code",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "tomasz-smykowski",
     "engines": {
         "vscode": "^1.26.0"
