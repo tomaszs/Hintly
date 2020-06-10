@@ -30,6 +30,7 @@
         }
     },
     "scripts": {
+        "publish": "vsce publish minor",
         "build": "vsce package",
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
