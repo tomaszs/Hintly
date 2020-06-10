@@ -1,0 +1,40 @@
+{
+    "name": "assistant",
+    "displayName": "Assistant",
+    "description": "Boost your development by providing custom tips displayed in the code",
+    "version": "0.1.0",
+    "publisher": "tomasz-smykowski",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "configuration": {
+            "properties": {
+                "assistant.rules": {
+                    "type": "array",
+                    "default": []
+                }
+            }
+        }
+    },
+    "scripts": {
+        "build": "vsce package",
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "tslint -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.0",
+        "@types/vscode": "^1.26.0",
+        "tslint": "5.10.0",
+        "typescript": "3.8.3"
+    }
+}
