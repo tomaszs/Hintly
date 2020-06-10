@@ -36,7 +36,7 @@ When saved, typing 'tom" in a source code file will display "hello" text above. 
 
 ## Demo
 
-Regex: (@Input\\(\\) .*)(: false;). Prevents from bad boolean Input declaration in Angular component
+Regex: @Input\\(\\) .*: false;. Prevents from bad boolean Input declaration in Angular component
 
 ![](demo.gif)
 
