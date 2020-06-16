@@ -1,18 +1,34 @@
-# Assistant README
+# Assistant - Realtime Linter & Quality Assurance For Your Team
 
-Boost your development by providing custom tips displayed in the code.
+Are you annoyed that your notes on hard to fix issues are not available when you need them the most - while coding? Is setting standards for the team code broken even if you have a centralized place for rules because it i hard to keep tabs on them all the time? 
 
-1. Open Visual Studio Code Workspace
-2. If you don't have it, choose file "Save Workspace As..."
-3. Press CTRL + ALT + P to open options
-4. Find "Preferences: Open Workspace Settings (JSON) and open it
-5. In the section settings add a item "assistant" and under it an item "rules" and under it an array of rules.
+Never make the same mistakes again!
+
+At last there is a solution to these problems. Let me present you a groundbreaking Visual Studio Code extension. Assistant will boost your team code quality and performance.
+
+No more looking into documentation. Now you don't need to search through piles of notes to find what you need. Now you can write notes that will pop-up exactly when you or your team member writes a code that they apply to. 
+
+The extension is designed to make the process super easy:
+
+1) Write notes and define RegEx rules when they should show up
+2) Use your favourite version control software to share rules
+3) Rules will automatically show up for all team member when they need them
+
+## Instruction
+
+1. Open Visual Studio Code Workspace:
+a) If you don't have it, choose file "Save Workspace As..."
+b) Press CTRL + ALT + P to open options
+c) Find "Preferences: Open Workspace Settings (JSON) and open it
+2. In the section settings add a item "assistant" and under it an item "rules" and under it an array of rules.
 
 Each rule should contain:
-regex - a string with a regex rule
+regex - a string with a RegEx rule
 message - text that should be displayed when the rule is trigerred
 
-Example workspace configuration:
+## Demo
+
+Example workspace configuration for Angular/TypeScript. It informs about a bad boolean Input declaration in Angular component. Normally it does not trigger build or linter errors and is a hard to track problem:
 
 ```
 
@@ -22,8 +38,8 @@ Example workspace configuration:
 		"assistant": {
 			"rules": [
 				{
-					"regex": "tom",
-					"message": "hello"
+					"regex": "@Input\\\\(\\\\) .*: false;",
+					"message": "Define property value with =, not with:"
 				}
 			]
     }
@@ -32,13 +48,18 @@ Example workspace configuration:
 }
 ```
 
-When saved, typing 'tom" in a source code file will display "hello" text above. You can use RegEx to write more advanced rules.
-
-## Demo
-
-Regex: @Input\\(\\) .*: false;. Prevents from bad boolean Input declaration in Angular component
+Result:
 
 ![](demo.gif)
+
+## Modifiers
+
+On default RegEx rules are processed with a 'g' modifier. You can change this behaviour. For example by adding an 'i' modifier to make the rule case insensitive. All RegEx modifiers are supported by the extension. How to add modifier?
+
+1) Add a property "modifiers" to a rule and put there modifier letters. For example: 'gi'.
+2) Add a property "modifiers" on top of assistant JSON settings to set global modifiers for your rules
+
+
 
 ## Installation
 
@@ -53,6 +74,6 @@ Extension in the Visual Studio Code Marketplace:
 
 https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
 
-## Autor
+## Autors
 
 Tomasz Smykowski (http://tomasz-smykowski.com)

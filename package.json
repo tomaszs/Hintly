@@ -1,6 +1,6 @@
 {
     "name": "assistant",
-    "displayName": "Assistant",
+    "displayName": "Assistant - Realtime Linter & Quality Assurance For Your Team",
     "keywords": [
         "productivity",
         "visual studio code",
@@ -10,7 +10,7 @@
         "regex"
     ],
     "icon": "images/assistant.png",
-    "description": "Boost your development by providing custom tips displayed in the code",
+    "description": "Never do the same mistake again",
     "version": "0.8.0",
     "publisher": "tomasz-smykowski",
     "repository": {

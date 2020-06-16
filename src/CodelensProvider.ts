@@ -17,10 +17,14 @@ export class CodelensProvider implements vscode.CodeLensProvider {
 
     readRules() {
         const rules = vscode.workspace.getConfiguration("assistant").get("rules");
+        const globalModifiers: string | undefined = vscode.workspace.getConfiguration("assistant").get("modifiers");
         if (rules) {
             this.regex = [];
-            (rules as []).forEach((rule: {regex: string, message: string}) => {
-                this.regex.push({regex: new RegExp(rule.regex, "g"), message: rule.message});
+            (rules as []).forEach((rule: {regex: string, message: string, modifiers: string}) => {
+                this.regex.push({regex: new RegExp(rule.regex, 
+                    rule.modifiers ? rule.modifiers : (globalModifiers ? globalModifiers : "g")
+                ),
+                message: rule.message});
             })
         }
     }
@@ -29,14 +33,15 @@ export class CodelensProvider implements vscode.CodeLensProvider {
         token: vscode.CancellationToken): vscode.CodeLens[] | Thenable<vscode.CodeLens[]> {
 
         this.codeLenses = [];
+        const text = document.getText();
         this.regex.forEach((regexSettings) => {
-            const regex = new RegExp(regexSettings.regex);
-            const text = document.getText();
+            const regex = regexSettings.regex;
             let matches;
             while ((matches = regex.exec(text)) !== null) {
-                let line = document.lineAt(document.positionAt(matches.index).line);
-                let indexOf = line.text.indexOf(matches[0]);
-                let position = new vscode.Position(line.lineNumber, indexOf);
+                // let line = document.lineAt(document.positionAt(matches.index).line);
+                // let indexOf = line.text.indexOf(matches[0]);
+                // let position = new vscode.Position(line.lineNumber, indexOf);
+                let position = document.positionAt(matches.index);
                 let range = document.getWordRangeAtPosition(position, new RegExp(regexSettings.regex));
                 if (range) {
                     const codeLens = new vscode.CodeLens(range);
