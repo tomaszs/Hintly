@@ -56,10 +56,10 @@ Result:
 
 On default RegEx rules are processed with a 'g' modifier. You can change this behaviour. For example by adding an 'i' modifier to make the rule case insensitive. All RegEx modifiers are supported by the extension. How to add modifier?
 
-1) Add a property "modifiers" to a rule and put there modifier letters. For example: 'gi'.
+1) Add a property "modifiers" to a rule and put there local modifier letters. For example: 'gi'.
 2) Add a property "modifiers" on top of assistant JSON settings to set global modifiers for your rules
 
-
+If both modifiers are set, local modifiers will be used.
 
 ## Installation
 
