@@ -32,6 +32,8 @@ export class CodelensProvider implements vscode.CodeLensProvider {
     public provideCodeLenses(document: vscode.TextDocument, 
         token: vscode.CancellationToken): vscode.CodeLens[] | Thenable<vscode.CodeLens[]> {
 
+        if (document.fileName.endsWith('code-workspace')) { return []; }
+
         this.codeLenses = [];
         const text = document.getText();
         this.regex.forEach((regexSettings) => {
