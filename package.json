@@ -33,9 +33,32 @@
     "contributes": {
         "configuration": {
             "properties": {
-                "assistant.rules": {
-                    "type": "array",
-                    "default": []
+                "assistant": {
+                    "type": "object",
+                    "properties": {
+                        "modifiers": {
+                            "type": "string",
+                            "default": "g"
+                        },
+                        "rules": {
+                            "type": "array",
+                            "default": [],
+                            "items": {
+                                "properties": {
+                                    "regex": {
+                                        "type": "string"
+                                    },
+                                    "message": {
+                                        "type": "string"
+                                    },
+                                    "modifiers": {
+                                        "type": "string",
+                                        "default": "g"
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
