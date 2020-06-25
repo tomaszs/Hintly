@@ -74,6 +74,12 @@ Extension in the Visual Studio Code Marketplace:
 
 https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
 
+## Rules sets
+
+If you have a set of rules for any language / library send me a list, or link to GitHub, blog post etc. and i will link it here.
+
+My rules for Angular / TypeScript: https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
+
 ## Autors
 
 Tomasz Smykowski (http://tomasz-smykowski.com)
