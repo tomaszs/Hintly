@@ -7,6 +7,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.9.0]
 
 - Unit tests
+- Rulesets: Added file with rulesets, and ruleset for Angular
 - Readme: Minor updates
 - Readme: Link to ruleset for Angular/TypeScript
 - Readme: Added comparision to regular Linters and SonarLint

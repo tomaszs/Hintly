@@ -1,0 +1,41 @@
+{
+    "regex": "^::ng-deep.*$",
+    "message": "Prepend with :host, so that styles won't leak",
+    "modifiers": "gm"
+},
+{
+    "regex": "OnAfterViewInit",
+    "message": "it should be ngAfterViewInit"
+},
+{
+    "regex": " ngIf",
+    "message": "It should be *ngIf"
+},
+{
+    "regex": "@Input\\(\\) .*: false;",
+    "message": "Type of input should be boolean here, not false"
+},
+{
+    "regex": "\\*ngIf=\"\"",
+    "message": "ngIf can not be empty"
+},
+{
+    "regex": "\\(\\) \\[",
+    "message": "Function body should be in curly brackets not square ones"
+},
+{
+    "regex": "new Dayjs()",
+    "message": "New Dayjs() is created with dayjs() without new operator"
+},
+{
+    "regex": "if \\(\\!changes\\.",
+    "message": "In ngOnChanges? It does not check if value is not provided for property"
+},
+{
+    "regex": "unsubscribe\\(\\)",
+    "message": "Use pipe(takeUntil(this.onDestroy$)) not unsubscribe"
+},
+{
+    "regex": "\\.subscribe\\(\\)",
+    "message": "Don't forget to unsubscribe with pipe takeUntil"
+}
