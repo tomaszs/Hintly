@@ -95,6 +95,15 @@ https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
 2. Messages show up above the code you write when you write it. You don't need to look into "Problems tab" and navigate back to the place where situation occurred. So you don't loose an eye off the code you write
 3. Writing Assistant rules is extremely easy. Everyone can do it right away
 
+## Rules sets
+
+If you have a set of rules for any language / library send me a list, or link to GitHub, blog post etc. and i will link it here.
+
+### Angular/TypeScript
+
+Available in the file rulesets/angular.txt
+Blog post explaining rules: https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
+
 ## Authors
 
 Tomasz Smykowski (http://tomasz-smykowski.com)
