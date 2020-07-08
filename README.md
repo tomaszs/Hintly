@@ -1,41 +1,3 @@
-# Assistant - Realtime Linter & Quality Assurance For Your Team
-
-Are you annoyed that your notes on hard to fix issues are not available when you need them the most - while coding? Is setting standards for the team code broken even if you have a centralized place for rules because it i hard to keep tabs on them all the time? 
-
-Never make the same mistakes again!
-
-At last there is a solution to these problems. Let me present you a groundbreaking Visual Studio Code extension. Assistant will boost your team code quality and performance.
-
-No more looking into documentation. Now you don't need to search through piles of notes to find what you need. Now you can write notes that will pop-up exactly when you or your team member writes a code that they apply to. 
-
-The extension is designed to make the process super easy:
-
-1) Write notes and define RegEx rules when they should show up
-2) Use your favourite version control software to share rules
-3) Rules will automatically show up for all team member when they need them
-
-## How to add your own rules
-
-You can add rules to workspace settings file, and/or to user settings file depending on your needs.
-
-1a. If you want to add settings to workspace, open Visual Studio Code Workspace:
-
-a) If you don't have it, choose file "Save Workspace As..."
-b) Press CTRL + ALT + P to open options
-c) Find/write "Preferences: Open Workspace Settings (JSON) and open it
-
-1b. If you want to add settings to user settings, open Visual Studio Code User settings:
-
-b) Press CTRL + ALT + P to open options
-c) Find/write "Preferences: Open Settings (JSON) and open it
-
-2. In the section settings add a item "assistant" and under it an item "rules" and under it an array of rules.
-
-Each rule should contain:
-
-regex - a string with a RegEx rule
-message - text that should be displayed when the rule is trigerred
-
 ## Demo
 
 Example workspace configuration for Angular/TypeScript. It informs about a bad boolean Input declaration in Angular component. Normally it does not trigger build or linter errors and is a hard to track problem:
@@ -61,14 +23,21 @@ Result:
 
 ![](demo.gif)
 
-## Modifiers
+# Assistant - Realtime Linter & Quality Assurance For Your Team
 
-On default RegEx rules are processed with a 'g' modifier. You can change this behaviour. For example by adding an 'i' modifier to make the rule case insensitive. All RegEx modifiers are supported by the extension. How to add modifier?
+Are you annoyed that your notes on hard to fix issues are not available when you need them the most - while coding? Is setting standards for the team code broken even if you have a centralized place for rules because it i hard to keep tabs on them all the time? 
 
-1) Add a property "modifiers" to a rule and put there local modifier letters. For example: 'gi'.
-2) Add a property "modifiers" on top of assistant JSON settings to set global modifiers for your rules
+Never make the same mistakes again!
 
-If both modifiers are set, local modifiers will be used.
+At last there is a solution to these problems. Let me present you a groundbreaking Visual Studio Code extension. Assistant will boost your team code quality and performance.
+
+No more looking into documentation. Now you don't need to search through piles of notes to find what you need. Now you can write notes that will pop-up exactly when you or your team member writes a code that they apply to. 
+
+The extension is designed to make the process super easy:
+
+1) Write notes and define RegEx rules when they should show up
+2) Use your favourite version control software to share rules
+3) Rules will automatically show up for all team member when they need them
 
 ## Installation
 
@@ -83,26 +52,64 @@ Extension in the Visual Studio Code Marketplace:
 
 https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
 
-## What is the difference between Assistant and SonarLint?
+## How to install ready-made rulesets?
+
+Assistant is language and framework agnostic. The database of ready-made rulesets will grow over time.
+
+### Angular / TypeScript
+
+Available in the file rulesets/angular.txt
+Blog post explaining rules: https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
+
+If you have a set of rules for any language / library send me a list, or link to GitHub, blog post etc. and i will link it here.
+
+## How to add your own Assistant rules?
+
+You can add rules to workspace settings file, and/or to user settings file depending on your needs.
+
+
+1a. If you want to add settings to workspace, open Visual Studio Code Workspace:
+
+a) If you don't have it, choose file "Save Workspace As..."
+b) Press CTRL + ALT + P to open options
+c) Find/write "Preferences: Open Workspace Settings (JSON) and open it
+
+
+1b. If you want to add settings to user settings, open Visual Studio Code User settings:
+
+b) Press CTRL + ALT + P to open options
+c) Find/write "Preferences: Open Settings (JSON) and open it
+
+
+2. In the section settings add a item "assistant" and under it an item "rules" and under it an array of rules.
+
+Each rule should contain:
+
+regex - a string with a RegEx rule
+message - text that should be displayed when the rule is trigerred
+
+## How to add RegEx modifiers?
+
+On default RegEx rules are processed with a 'g' modifier. You can change this behaviour. For example by adding an 'i' modifier to make the rule case insensitive. All RegEx modifiers are supported by the extension. How to add modifier?
+
+1) Add a property "modifiers" to a rule and put there local modifier letters. For example: 'gi'.
+2) Add a property "modifiers" on top of assistant JSON settings to set global modifiers for your rules
+
+If both modifiers are set, local modifiers will be used.
+
+## FAQ
+
+### What is the difference between Assistant and SonarLint?
 
 1. You don't need to connect to a server to use Assistant making setup as easy as installing the extension
 2. Writing rules is extremely easy with Assistant, so everyone can do it right away
 3. Messages show up right above the code you write in miliseconds. You can immediately fix your code
 
-## What is the difference between Assistant and regular Linters
+### What is the difference between Assistant and regular Linters
 
 1. Assistant is realtime. You don't need to wait for the linting process to finish. Assistant makes the coding process a much smoother experience
 2. Messages show up above the code you write when you write it. You don't need to look into "Problems tab" and navigate back to the place where situation occurred. So you don't loose an eye off the code you write
 3. Writing Assistant rules is extremely easy. Everyone can do it right away
-
-## Rules sets
-
-If you have a set of rules for any language / library send me a list, or link to GitHub, blog post etc. and i will link it here.
-
-### Angular/TypeScript
-
-Available in the file rulesets/angular.txt
-Blog post explaining rules: https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
 
 ## Authors
 
