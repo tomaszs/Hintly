@@ -14,15 +14,25 @@ The extension is designed to make the process super easy:
 2) Use your favourite version control software to share rules
 3) Rules will automatically show up for all team member when they need them
 
-## Instruction
+## How to add your own rules
 
-1. Open Visual Studio Code Workspace:
+You can add rules to workspace settings file, and/or to user settings file depending on your needs.
+
+1a. If you want to add settings to workspace, open Visual Studio Code Workspace:
+
 a) If you don't have it, choose file "Save Workspace As..."
 b) Press CTRL + ALT + P to open options
-c) Find "Preferences: Open Workspace Settings (JSON) and open it
+c) Find/write "Preferences: Open Workspace Settings (JSON) and open it
+
+1b. If you want to add settings to user settings, open Visual Studio Code User settings:
+
+b) Press CTRL + ALT + P to open options
+c) Find/write "Preferences: Open Settings (JSON) and open it
+
 2. In the section settings add a item "assistant" and under it an item "rules" and under it an array of rules.
 
 Each rule should contain:
+
 regex - a string with a RegEx rule
 message - text that should be displayed when the rule is trigerred
 
@@ -31,20 +41,19 @@ message - text that should be displayed when the rule is trigerred
 Example workspace configuration for Angular/TypeScript. It informs about a bad boolean Input declaration in Angular component. Normally it does not trigger build or linter errors and is a hard to track problem:
 
 ```
-
 {
-	.....
-	"settings": {
-		"assistant": {
-			"rules": [
-				{
-					"regex": "@Input\\\\(\\\\) .*: false;",
-					"message": "Define property value with =, not with:"
-				}
-			]
+ ...
+ "settings": {
+  "assistant": {
+   "rules": [
+    {
+     "regex": "@Input\\\\(\\\\) .*: false;",
+     "message": "Define property value with =, not with:"
     }
-	},
-  .....
+   ]
+  }
+ },
+ ...
 }
 ```
 
@@ -74,6 +83,18 @@ Extension in the Visual Studio Code Marketplace:
 
 https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
 
-## Autors
+## What is the difference between Assistant and SonarLint?
+
+1. You don't need to connect to a server to use Assistant making setup as easy as installing the extension
+2. Writing rules is extremely easy with Assistant, so everyone can do it right away
+3. Messages show up right above the code you write in miliseconds. You can immediately fix your code
+
+## What is the difference between Assistant and regular Linters
+
+1. Assistant is realtime. You don't need to wait for the linting process to finish. Assistant makes the coding process a much smoother experience
+2. Messages show up above the code you write when you write it. You don't need to look into "Problems tab" and navigate back to the place where situation occurred. So you don't loose an eye off the code you write
+3. Writing Assistant rules is extremely easy. Everyone can do it right away
+
+## Authors
 
 Tomasz Smykowski (http://tomasz-smykowski.com)

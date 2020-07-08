@@ -4,6 +4,13 @@ All notable changes to the "Assistant" extension will be documented in this file
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.9.0]
+
+- Unit tests
+- Readme: Minor updates
+- Readme: Added comparision to regular Linters and SonarLint
+- Readme: Added instruction how to add rules to user settings
+
 ## [0.8.0]
 
 - Now you can set up RegEx modifiers for rules and globally for workspace eg. 'gi' for case insensitive rules

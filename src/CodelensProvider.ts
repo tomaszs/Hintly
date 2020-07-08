@@ -25,14 +25,14 @@ export class CodelensProvider implements vscode.CodeLensProvider {
                     rule.modifiers ? rule.modifiers : (globalModifiers ? globalModifiers : "g")
                 ),
                 message: rule.message});
-            })
+            });
         }
     }
 
     public provideCodeLenses(document: vscode.TextDocument, 
         token: vscode.CancellationToken): vscode.CodeLens[] | Thenable<vscode.CodeLens[]> {
 
-        if (document.fileName.endsWith('code-workspace')) { return []; }
+        if (document.fileName.endsWith('code-workspace') || document.fileName === 'settings.json') { return []; }
 
         this.codeLenses = [];
         const text = document.getText();
