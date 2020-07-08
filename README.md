@@ -1,6 +1,6 @@
 ## Demo
 
-Example workspace configuration for Angular/TypeScript. It informs about a bad boolean Input declaration in Angular component. Normally it does not trigger build or linter errors and is a hard to track problem:
+Assistant is language and framework agnostic. Here is an example workspace configuration for Angular/TypeScript. It informs about a bad boolean Input declaration in Angular component. Normally it does not trigger build or linter errors and is a hard to track problem:
 
 ```
 {
