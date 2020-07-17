@@ -21,7 +21,7 @@ Assistant is language and framework agnostic. Here is an example workspace confi
 
 Result:
 
-![](demo.gif)
+![](images/demo.gif)
 
 # Assistant - Realtime Linter & Quality Assurance For Your Team
 
