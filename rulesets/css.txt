@@ -1,0 +1,24 @@
+{
+    "regex": "opacity:\\s*[0-9]*%;",
+    "message": "Opacity can be a value between 0 and 1, NOT %"
+},
+{
+    "regex": "cursor\\?",
+    "message": "Default value is: auto"
+},
+{
+    "regex": "border-radius: unset;",
+    "message": "Unset is improper value. The proper value is 0"
+},
+{
+    "regex": "justify-content: left;",
+    "message": "Prepend style with justify-content: flex-start; to satisfy IE 11"
+},
+{
+    "regex": "justify-content: end;",
+    "message": "Prepend style with justify-content: flex-end; to satisfy IE 11"
+},
+{
+    "regex": "justify-content: space-evenly;",
+    "message": "Prepend style with justify-content: space-around; to satisfy IE 11"
+}

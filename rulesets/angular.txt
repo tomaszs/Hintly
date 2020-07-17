@@ -20,10 +20,6 @@
     "message": "ngIf can not be empty"
 },
 {
-    "regex": "\\(\\) \\[",
-    "message": "Function body should be in curly brackets not square ones"
-},
-{
     "regex": "new Dayjs()",
     "message": "New Dayjs() is created with dayjs() without new operator"
 },

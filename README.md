@@ -54,14 +54,18 @@ https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
 
 ## How to install ready-made rulesets?
 
-Assistant is language and framework agnostic. The database of ready-made rulesets will grow over time.
+Assistant is language and framework agnostic. The database of ready-made rulesets will grow over time. 
 
-### Angular / TypeScript
+Available ready-made rulesets (in rulesets folder in the repo):
 
-Available in the file rulesets/angular.txt
-Blog post explaining rules: https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
+- angular.txt
+- js.txt
+- css.txt
+- general.txt
 
-If you have a set of rules for any language / library send me a list, or link to GitHub, blog post etc. and i will link it here.
+Combine suitable rulesets for you stack.
+
+If you have a set of rules for any language / library create MR, or send it in any way, to be included here!
 
 ## How to add your own Assistant rules?
 
@@ -97,7 +101,15 @@ On default RegEx rules are processed with a 'g' modifier. You can change this be
 
 If both modifiers are set, local modifiers will be used.
 
+## How to add multiline rule?
+
+Set modifiers to "s"
+
 ## FAQ
+
+### How to inspire to write my own rules?
+
+Please read an article about rules for Angular. It covers ideas for rules and concept of how to write them: https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
 
 ### What is the difference between Assistant and SonarLint?
 

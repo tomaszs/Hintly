@@ -21,10 +21,23 @@ export class CodelensProvider implements vscode.CodeLensProvider {
         if (rules) {
             this.regex = [];
             (rules as []).forEach((rule: {regex: string, message: string, modifiers: string}) => {
-                this.regex.push({regex: new RegExp(rule.regex, 
-                    rule.modifiers ? rule.modifiers : (globalModifiers ? globalModifiers : "g")
-                ),
-                message: rule.message});
+
+                // https://stackoverflow.com/a/31970023/38940
+                // The index at which to start the next match. When "g" is absent, this will remain as 0.
+                // Adding g to prevent infinite loop
+                let modifier = rule.modifiers ? rule.modifiers : globalModifiers;
+                modifier = modifier ? modifier : 'g';
+                if (modifier && !modifier.includes('g')) {
+                    modifier += 'g';
+                }
+
+                this.regex.push({
+                    regex: new RegExp(
+                        rule.regex, 
+                        modifier
+                    ),
+                message: rule.message
+                });
             });
         }
     }
@@ -40,11 +53,9 @@ export class CodelensProvider implements vscode.CodeLensProvider {
             const regex = regexSettings.regex;
             let matches;
             while ((matches = regex.exec(text)) !== null) {
-                // let line = document.lineAt(document.positionAt(matches.index).line);
-                // let indexOf = line.text.indexOf(matches[0]);
-                // let position = new vscode.Position(line.lineNumber, indexOf);
                 let position = document.positionAt(matches.index);
-                let range = document.getWordRangeAtPosition(position, new RegExp(regexSettings.regex));
+                // let range = document.getWordRangeAtPosition(position, new RegExp(regexSettings.regex, regexSettings.regex.flags));
+                let range = new vscode.Range(position, position);
                 if (range) {
                     const codeLens = new vscode.CodeLens(range);
                     codeLens.command = {

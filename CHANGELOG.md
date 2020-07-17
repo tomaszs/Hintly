@@ -4,6 +4,13 @@ All notable changes to the "Assistant" extension will be documented in this file
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.11.0]
+
+- Added support of multiline regex (modifiers: 's')
+- Performance improvement
+- New rules for Angular
+- First rules for CSS (SCSS) and JS. Also a general rule
+
 ## [0.9.0]
 
 - Unit tests
