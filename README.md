@@ -39,6 +39,16 @@ The extension is designed to make the process super easy:
 2) Use your favourite version control software to share rules
 3) Rules will automatically show up for all team member when they need them
 
+## Patrons
+
+Now you can become a patron of Assistant and be listed here. Read below
+
+## Become a patron
+
+Become a patron for 3$ and receive amazing Patreon benefits:
+
+https://www.patreon.com/tomaszs
+
 ## Installation
 
 1. Go to Visual Studio Code
@@ -126,3 +136,13 @@ Please read an article about rules for Angular. It covers ideas for rules and co
 ## Authors
 
 Tomasz Smykowski (http://tomasz-smykowski.com)
+
+## Patrons
+
+Now you can become a patron of Assistant and be listed here. Read below
+
+## Become a patron
+
+Become a patron for 3$ and receive amazing patron benefits:
+
+https://www.patreon.com/tomaszs
