@@ -4,7 +4,11 @@ All notable changes to the "Assistant" extension will be documented in this file
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [0.12.0]
+## [0.14.0]
+
+- Article with SQL rules
+
+## [0.13.0]
 
 - Information how to become a patron
 

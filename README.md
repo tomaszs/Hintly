@@ -119,7 +119,13 @@ Set modifiers to "s"
 
 ### How to inspire to write my own rules?
 
-Please read an article about rules for Angular. It covers ideas for rules and concept of how to write them: https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
+Please read an articles of rules authors. They covers ideas for rules and concept of how to write them: 
+
+Angular, CSS, JS:
+https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
+
+SQL (by Chris Young):
+https://dev.to/ronsoak/doing-the-impossible-using-assistant-to-make-a-sql-linter-and-how-you-can-make-it-lint-whatever-you-want-2ke2
 
 ### What is the difference between Assistant and SonarLint?
 
