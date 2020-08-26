@@ -115,6 +115,16 @@ If both modifiers are set, local modifiers will be used.
 
 Set modifiers to "s"
 
+## Licence
+
+You can:
+
+- install extension,
+- use the extension,
+- use rules
+
+for free for whatever you want, including commercial use
+
 ## FAQ
 
 ### How to inspire to write my own rules?
