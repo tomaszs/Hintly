@@ -149,6 +149,12 @@ https://dev.to/ronsoak/doing-the-impossible-using-assistant-to-make-a-sql-linter
 2. Messages show up above the code you write when you write it. You don't need to look into "Problems tab" and navigate back to the place where situation occurred. So you don't loose an eye off the code you write
 3. Writing Assistant rules is extremely easy. Everyone can do it right away
 
+### Notes for extension developers
+
+- Use nvm 10.15.3
+- If you face "Error: Failed to unzip downloaded vscode at", during npm run test go to ".vscode-test" folder and extract ZIP manually
+- If you face "Running extension tests from the command line is currently only supported if no other instance of Code is running" close VSCode and run npm run test from command line / bash
+
 ## Authors
 
 Tomasz Smykowski (http://tomasz-smykowski.com)
