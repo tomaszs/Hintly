@@ -70,6 +70,7 @@ Available ready-made rulesets (in rulesets folder in the repo):
 
 - [sql.txt (by Chris Young)](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.txt)
 - [angular.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/angular.txt)
+- [react.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/react.txt)
 - [js.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/js.txt)
 - [css.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/css.txt)
 - [general.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/general.txt)
