@@ -1,0 +1,4 @@
+{
+    "regex": "componentWillMount",
+    "message": "Use componentDidMount. componentWillMount deprecated in 2018"
+}
