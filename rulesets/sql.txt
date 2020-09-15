@@ -1,0 +1,85 @@
+ {
+	"regex": "(,)(\\s*\\W*)(from\\s)",
+	"message": "ERROR: You don't need a comma on the last column.",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(join)(\\s*\\w*)(\\s*\\w*\\s*)(and)",
+	"message": "ERROR: An ON keyword must follow a join condition",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(limit\\s*\\d*\\s*)(order|group|where|having)",
+	"message": "ERROR: Limit should be the last keyword in the query.",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(from|group|order|limit)\\s*\\w*\\s*(select)",
+	"message": "ERROR: Ensure you add a ';' to the end of a statement before starting a new one",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(else)\\s*,",
+	"message": "ERROR: Normally else is followed by an END keyword.",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(selct|selevt|seletc)\\s",
+	"message": "ERROR: Have you spelt select wrong?",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(form|ftom)\\s",
+	"message": "ERROR: Have you spelt from wrong?",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(,)\\s*\\)",
+	"message": "ERROR: You need to delete that extra comma.",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(\\S[c][^o][n-z]{2,3}){4}\\W",
+	"message": "ERROR: um that's a naughty word... did you mean COUNT?",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(where)(\\s*\\w*\\W*\\w*\\W*)(where)",
+	"message": "ERROR: You have two where clauses.",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(with\\s)(\\w*\\s*)(as)",
+	"message": "WARNING: Please refrain from using CTE's. They are bad for production code.",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(join\\s)(\\w*\\s*\\w*\\s*)(using)",
+	"message": "WARNING: Do not use USING when joining tables, use ON.",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "commit;",
+	"message": "WARNING: Most databases auto commit, you do not need to write commit.",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(\\w*)(\\s*<>\\s*)",
+	"message": "WARNING: Please avoid using <> and instead use !=",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(coalesce\\s*)",
+	"message": "WARNING: Please avoid using coalesce, instead use NVL",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "(union\\s*)(select)",
+	"message": "WARNING: I can't think a valid reason to use union. You should always be using union all. ",
+	"modifiers": "sig"
+ },
+ {
+	"regex": "char\\W1\\W",
+	"message": "WARNING: You should be using a boolean if you are building a char with 1 space.",
+	"modifiers": "sig"
+ }
