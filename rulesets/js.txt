@@ -2,3 +2,7 @@
     "regex": "\\(\\) \\[",
     "message": "Function body should be in curly brackets not square ones"
 },
+{
+    "regex": " = Date\\(",
+    "message": "Prepend Date with \"new\""
+}
