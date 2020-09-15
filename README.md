@@ -41,7 +41,7 @@ The extension is designed to make the process super easy:
 
 ## Patrons
 
-Now you can become a patron of Assistant and be listed here. Read below
+Jack Skeet 10$/mo
 
 ## Become a patron
 
@@ -68,10 +68,11 @@ Assistant is language and framework agnostic. The database of ready-made ruleset
 
 Available ready-made rulesets (in rulesets folder in the repo):
 
-- angular.txt
-- js.txt
-- css.txt
-- general.txt
+- [sql.txt (by Chris Young)](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.txt)
+- [angular.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/angular.txt)
+- [js.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/js.txt)
+- [css.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/css.txt)
+- [general.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/general.txt)
 
 Combine suitable rulesets for you stack.
 
@@ -161,7 +162,7 @@ Tomasz Smykowski (http://tomasz-smykowski.com)
 
 ## Patrons
 
-Now you can become a patron of Assistant and be listed here. Read below
+Jack Skeet 10$/mo
 
 ## Become a patron
 
