@@ -21,4 +21,8 @@
 {
     "regex": "justify-content: space-evenly;",
     "message": "Prepend style with justify-content: space-around; to satisfy IE 11"
+},
+{
+    "regex": "color #[0-9a-fA-F]{3}",
+    "message": "Missing colon between property name and HEX value"
 }
