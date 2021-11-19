@@ -177,6 +177,13 @@ Become a patron for 3$ and receive amazing patron benefits:
 
 https://www.patreon.com/tomaszs
 
+## How to publish rules (internal notes)
+
+1. Update README and CHANGELOG
+2. Commit and push
+
 ## How to publish extension (internal notes)
 
-vsce publish
+1. Update README and CHANGELOG
+2. Commit and push (login to GitHub)
+3. TBD
