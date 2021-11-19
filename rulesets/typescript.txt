@@ -1,0 +1,4 @@
+ {
+    "regex": "any",
+    "message": "Don't use any, nor $any"
+}

@@ -1,0 +1,4 @@
+{
+    "regex": "<React.Fragment>",
+    "message": "Use <> instead"
+}
