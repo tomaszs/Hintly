@@ -176,3 +176,7 @@ Now you can become a patron of Assistant and be listed here. Read below
 Become a patron for 3$ and receive amazing patron benefits:
 
 https://www.patreon.com/tomaszs
+
+## How to publish extension (internal notes)
+
+vsce publish
