@@ -21,4 +21,24 @@
 {
     "regex": "justify-content: space-evenly;",
     "message": "Prepend style with justify-content: space-around; to satisfy IE 11"
+},
+{
+    "regex": "margin: ",
+    "message": "Order: 1) topandbottom leftandright 2) top rightandleft bottom 3) top right bottom left"
+},
+{
+    "regex": "padding: ",
+    "message": "Order: 1) topandbottom leftandright 2) top rightandleft bottom 3) top right bottom left"
+},
+{
+    "regex": "@media",
+    "message": "Usage: eg. @media screen and (max-width: 700px)"
+},
+{
+    "regex": " 0px",
+    "message": "Use 0 without px instead"
+},
+{
+    "regex": "nth-of",
+    "message": "Starts with 1"
 }

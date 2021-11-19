@@ -2,3 +2,40 @@
     "regex": "\\(\\) \\[",
     "message": "Function body should be in curly brackets not square ones"
 },
+{
+    "regex": "export class Tree ",
+    "message": "Already declared in @angular/router/src/utils/tree. Use other name for convinience"
+},
+{
+    "regex": "export class Node ",
+    "message": "Already used by DOM API. Use other name for convinience"
+},
+{
+    "regex": "export class Location ",
+    "message": "Already used by Location API. Use other name for convinience"
+},
+{
+    "regex": "export type Location ",
+    "message": "Already used by Location API. Use other name for convinience"
+},
+{
+    "regex": "export type Node ",
+    "message": "Already used by DOM API. Use other name for convinience"
+},
+{
+    "regex": "var ",
+    "message": "Don't use var. Use let or const"
+},
+{
+    "regex": " == ",
+    "message": "Use === instead"
+},
+{
+    "regex": " != ",
+    "message": "Use !== instead"
+},
+{
+    "regex": "[;}]{1}\\n[ \\t]*return",
+    "message": "Add empty line before return",
+    "modifiers": "s"
+}

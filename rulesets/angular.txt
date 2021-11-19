@@ -34,4 +34,28 @@
 {
     "regex": "\\.subscribe\\(\\)",
     "message": "Don't forget to unsubscribe with pipe takeUntil"
+},
+{
+    "regex": "@Output()",
+    "message": "Usage: @Output() name = new EventEmitter<void>();"
+},
+{
+    "regex": "\\*ngFor=",
+    "message": "Usage: *ngFor=\"let item of items; index as i\", [param]=\"item.prop\""
+},
+{
+    "regex": "[\t ]{1}@ViewChild",
+    "message": "Usage: eg. \"@ViewChild('nodeId') container: ElementRef;\" Mark node in html with #nodeId"
+},
+{
+    "regex": "::host",
+    "message": "Change ::host to :host"
+},
+{
+    "regex": "nativeElement\\.width",
+    "message": "Should be nativeElement.style.width"
+},
+{
+    "regex": "nativeElement\\.height",
+    "message": "Should be nativeElement.style.height"
 }

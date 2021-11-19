@@ -68,14 +68,22 @@ Assistant is language and framework agnostic. The database of ready-made ruleset
 
 Available ready-made rulesets (in rulesets folder in the repo):
 
-- angular.txt
-- js.txt
-- css.txt
-- general.txt
+- react.txt (NEW) - 1 hint
+- typescript.txt (NEW) - 1 hint
+- html.txt (NEW) - 3 hints
+- angular.txt - 15 hints
+- js.txt - 10 hints
+- css.txt - 11 hints
+- general.txt - 1 hint
+- sql.txt - 8 hints
 
-Combine suitable rulesets for you stack.
+Total: 50 hints!
+
+Combine suitable rulesets for you stack eg. for Angular combine TypeScript, HTML, Angular, JS, CSS and general rules.
 
 If you have a set of rules for any language / library create MR, or send it in any way, to be included here!
+
+COMMIT YOUR HINTS!!!!
 
 ## How to add your own Assistant rules?
 
