@@ -68,25 +68,17 @@ Assistant is language and framework agnostic. The database of ready-made ruleset
 
 Available ready-made rulesets (in rulesets folder in the repo):
 
-<<<<<<< HEAD
-- react.txt (NEW) - 1 hint
-- typescript.txt (NEW) - 1 hint
-- html.txt (NEW) - 3 hints
-- angular.txt - 15 hints
-- js.txt - 10 hints
-- css.txt - 11 hints
-- general.txt - 1 hint
-- sql.txt - 8 hints
-=======
-- [sql.txt (by Chris Young)](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.txt)
-- [angular.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/angular.txt)
+- [html.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/html.txt) - 3
+- [typescript.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/typescript.txt) - 1
+- [react.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/react.txt) - 1
+- [sql.txt (by Chris Young)](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.txt) - 8
+- [angular.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/angular.txt) - 15
 - [react.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/react.txt)
-- [js.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/js.txt)
-- [css.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/css.txt)
-- [general.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/general.txt)
->>>>>>> c7a48c39b5870d50fcefac3350ebb9993dc9ae0b
+- [js.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/js.txt) - 10
+- [css.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/css.txt) - 11
+- [general.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/general.txt) - 1
 
-Total: 50 hints!
+Total: over 50 hints!
 
 Combine suitable rulesets for you stack eg. for Angular combine TypeScript, HTML, Angular, JS, CSS and general rules.
 
