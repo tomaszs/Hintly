@@ -41,4 +41,8 @@
 {
     "regex": "nth-of",
     "message": "Starts with 1"
+},
+{
+    "regex": "color #[0-9a-fA-F]{3}",
+    "message": "Missing colon between property name and HEX value"
 }

@@ -38,4 +38,8 @@
     "regex": "[;}]{1}\\n[ \\t]*return",
     "message": "Add empty line before return",
     "modifiers": "s"
+},
+{
+    "regex": " = Date\\(",
+    "message": "Prepend Date with \"new\""
 }

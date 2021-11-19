@@ -41,7 +41,7 @@ The extension is designed to make the process super easy:
 
 ## Patrons
 
-Now you can become a patron of Assistant and be listed here. Read below
+Jack Skeet 10$/mo
 
 ## Become a patron
 
@@ -68,6 +68,7 @@ Assistant is language and framework agnostic. The database of ready-made ruleset
 
 Available ready-made rulesets (in rulesets folder in the repo):
 
+<<<<<<< HEAD
 - react.txt (NEW) - 1 hint
 - typescript.txt (NEW) - 1 hint
 - html.txt (NEW) - 3 hints
@@ -76,6 +77,14 @@ Available ready-made rulesets (in rulesets folder in the repo):
 - css.txt - 11 hints
 - general.txt - 1 hint
 - sql.txt - 8 hints
+=======
+- [sql.txt (by Chris Young)](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.txt)
+- [angular.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/angular.txt)
+- [react.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/react.txt)
+- [js.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/js.txt)
+- [css.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/css.txt)
+- [general.txt](https://github.com/tomaszs/Assistant/blob/master/rulesets/general.txt)
+>>>>>>> c7a48c39b5870d50fcefac3350ebb9993dc9ae0b
 
 Total: 50 hints!
 
@@ -169,7 +178,7 @@ Tomasz Smykowski (http://tomasz-smykowski.com)
 
 ## Patrons
 
-Now you can become a patron of Assistant and be listed here. Read below
+Jack Skeet 10$/mo
 
 ## Become a patron
 
