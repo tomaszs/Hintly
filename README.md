@@ -23,7 +23,7 @@ Result:
 
 ![](images/demo.gif)
 
-# Assistant - Realtime Linter & Quality Assurance For Your Team
+# Assistant - Dynamic Hints For Your Code
 
 Are you annoyed that your notes on hard to fix issues are not available when you need them the most - while coding? Is setting standards for the team code broken even if you have a centralized place for rules because it i hard to keep tabs on them all the time? 
 
@@ -38,16 +38,6 @@ The extension is designed to make the process super easy:
 1) Write notes and define RegEx rules when they should show up
 2) Use your favourite version control software to share rules
 3) Rules will automatically show up for all team member when they need them
-
-## Patrons
-
-Jack Skeet 10$/mo
-
-## Become a patron
-
-Become a patron for 3$ and receive amazing Patreon benefits:
-
-https://www.patreon.com/tomaszs
 
 ## Installation
 
@@ -124,6 +114,22 @@ If both modifiers are set, local modifiers will be used.
 
 Set modifiers to "s"
 
+## How to limit the rule to a specific file extension or file?
+
+You can add "fileRegex" property to a rule. It is a RegEx that indicates what file, files you want the rule to be checked against.
+For example, to check only files with scss extension, you set:
+
+```
+fileRegex: '^.*\\.scss$'
+```
+
+Dash indicates a start of the file name, dollar an end
+.* - any characters any number of times
+\\. - escaped dot (it has a special meaning in RegEx). Since \ has a special meaning in JSON, it is escaped with another slash
+scss - the extension you are looking for
+
+When adding file names remember to espace special characters e.g. dot character.
+
 ## Licence
 
 You can:
@@ -160,7 +166,7 @@ https://dev.to/ronsoak/doing-the-impossible-using-assistant-to-make-a-sql-linter
 
 ### Notes for extension developers
 
-- Use nvm 10.15.3
+- Use nvm 14.15.0
 - If you face "Error: Failed to unzip downloaded vscode at", during npm run test go to ".vscode-test" folder and extract ZIP manually
 - If you face "Running extension tests from the command line is currently only supported if no other instance of Code is running" close VSCode and run npm run test from command line / bash
 
@@ -168,23 +174,19 @@ https://dev.to/ronsoak/doing-the-impossible-using-assistant-to-make-a-sql-linter
 
 Tomasz Smykowski (http://tomasz-smykowski.com)
 
-## Patrons
+## Internal notes
 
-Jack Skeet 10$/mo
-
-## Become a patron
-
-Become a patron for 3$ and receive amazing patron benefits:
-
-https://www.patreon.com/tomaszs
-
-## How to publish rules (internal notes)
+### How to publish rules
 
 1. Update README and CHANGELOG
 2. Commit and push
 
-## How to publish extension (internal notes)
+### How to publish extension
 
 1. Update README and CHANGELOG
-2. Commit and push (login to GitHub)
-3. TBD
+2. Update version in package.json
+3. Commit and push (login to GitHub)
+4. vsce package
+5. login to extension manager (with b@)
+6. update package
+tbd: how to do it via vsce publish

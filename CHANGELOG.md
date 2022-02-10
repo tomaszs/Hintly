@@ -4,6 +4,10 @@ All notable changes to the "Assistant" extension will be documented in this file
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.16.0]
+
+- Now rules can have fileRegex property that indicates what files should the rule be tested against
+
 ## [0.15.0]
 
 - New rules. Reached 50 rules.
