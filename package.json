@@ -1,6 +1,6 @@
 {
     "name": "assistant",
-    "displayName": "Assistant - Dynamic Hints For Your Code",
+    "displayName": "Hinty (formely Assistant) - Dynamic Hints For Your Code",
     "keywords": [
         "productivity",
         "visual studio code",
@@ -9,9 +9,9 @@
         "uberlinter",
         "regex"
     ],
-    "icon": "images/assistant.png",
+    "icon": "images/hinty.png",
     "description": "Never do the same mistake again",
-    "version": "0.16.0",
+    "version": "0.17.0",
     "publisher": "tomasz-smykowski",
     "repository": {
         "type": "git",

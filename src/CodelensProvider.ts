@@ -77,7 +77,7 @@ export class CodelensProvider implements vscode.CodeLensProvider {
                         codeLens.command = {
                             title: processedRule.message,
                             command: "assistant.codelensAction",
-                            tooltip: "Assistant"
+                            tooltip: "Hinty"
                         } as vscode.Command;
                         this.codeLenses.push(codeLens);
                     }
