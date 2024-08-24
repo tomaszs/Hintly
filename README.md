@@ -240,8 +240,8 @@ Hinty is like AI on steroids:
 4. npm install -g @vscode/vsce
 5. npm run build
 6. login to extension manager (with b@)
-7. update package
-tbd: how to do it via vsce publish
+7. click three dots next to the package in the list
+8. update package
 
 ## Authors
 
