@@ -78,6 +78,10 @@ Here you can find over a hundred ready to use rules:
 - [Web Development by Tom Smykowski](https://github.com/tomaszs/Assistant/blob/master/rulesets/webdev.json)
 - [SQL by Chris Young](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.json)
 
+<b>Pro-tip: </b>It's best to keep the downloaded rule-sets and your rule-sets separately. That way, when new rules appear, you just have to replace downloaded ones with the new ones.
+
+<b>24.08.2024</b> Web development hints updated! 116 hints gathered over four years!
+
 ## Creating A Hint
 
 ### 1. Open settings

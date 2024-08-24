@@ -11,7 +11,7 @@
     ],
     "icon": "images/hinty.png",
     "description": "AI+ Hints For Your Code In 1 Millisecond",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "publisher": "tomasz-smykowski",
     "repository": {
         "type": "git",
