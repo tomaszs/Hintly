@@ -1,8 +1,0 @@
-{
-    "regex": "<React.Fragment>",
-    "message": "Use <> instead"
-},
-{
-    "regex": "componentWillMount",
-    "message": "Use componentDidMount. componentWillMount deprecated in 2018"
-}

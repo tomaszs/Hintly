@@ -1,4 +1,0 @@
-{
-    "regex": ": :",
-    "message": "Spaced double colon syntax error"
-}

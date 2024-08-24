@@ -11,7 +11,7 @@
     ],
     "icon": "images/hinty.png",
     "description": "Never do the same mistake again",
-    "version": "0.17.0",
+    "version": "1.0.0",
     "publisher": "tomasz-smykowski",
     "repository": {
         "type": "git",

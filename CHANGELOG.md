@@ -4,6 +4,15 @@ All notable changes to the "Hinty" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.0] 23.08.2024
+
+- After two years of usage and reaching almost 2k developers worldwide extension prooved to be stable. That's why it's getting 1.0.0 version
+- Narrowed rulesets to specific file extensions to improve performance. E.g. TypeScript rules are only checked against TypeScript files ("fileRegex": ".*\\.ts")
+- Renamed rulesets to .json for syntax checking and color highlighting
+- Reorganized rulesets
+- Grouped webdev rules into webdev.json for convinience (JavaScript, TypeScript, CSS, SCSS, Angular, React). Since rulesets have file extension narrowers, it's ok to copy all rules, because it won't hinder performance. SQL is separately because idk what extensions should it handle
+- Rewritten Readme.md file with Regex cheatsheet and more
+
 ## [0.17.0]
 
 - Rebranding to "Hinty". Linter -> Hinter -> Hinty
