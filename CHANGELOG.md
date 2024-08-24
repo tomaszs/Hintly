@@ -4,14 +4,20 @@ All notable changes to the "Hinty" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.3] 24.08.2024
+
+- Second Readme rewrite
+- Removed unnecessary images
+- Added GIF illustration
+
 ## [1.0.0] 23.08.2024
 
-- After two years of usage and reaching almost 2k developers worldwide extension prooved to be stable. That's why it's getting 1.0.0 version
+- After two years of usage and reaching almost 2k developers worldwide extension proved to be stable. That's why it's getting 1.0.0 version
 - Narrowed rulesets to specific file extensions to improve performance. E.g. TypeScript rules are only checked against TypeScript files ("fileRegex": ".*\\.ts")
 - Renamed rulesets to .json for syntax checking and color highlighting
 - Reorganized rulesets
-- Grouped webdev rules into webdev.json for convinience (JavaScript, TypeScript, CSS, SCSS, Angular, React). Since rulesets have file extension narrowers, it's ok to copy all rules, because it won't hinder performance. SQL is separately because idk what extensions should it handle
-- Rewritten Readme.md file with Regex cheatsheet and more
+- Grouped webdev rules into webdev.json for convenience (JavaScript, TypeScript, CSS, SCSS, Angular, React). Since rulesets can narrow filenames, it's ok to copy all rules, because it won't hinder performance. SQL is separately because idk what extensions should it handle
+- Rewritten Readme.md file with Regex cheat-sheet and more
 - New logo
 
 ## [0.17.0]
@@ -45,10 +51,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.9.0]
 
 - Unit tests
-- Rulesets: Added file with rulesets, and ruleset for Angular
+- Rulesets: Added file with rulesets, and rule-set for Angular
 - Readme: Minor updates
-- Readme: Link to ruleset for Angular/TypeScript
-- Readme: Added comparision to regular Linters and SonarLint
+- Readme: Link to rule-set for Angular/TypeScript
+- Readme: Added comparison to regular Linters and SonarLint
 - Readme: Added instruction how to add rules to user settings
 
 ## [0.8.0]

@@ -2,13 +2,15 @@
 
 Hinty lets you define intelligent hints that will display in your code in a matter of 1 millisecond. Works for every project
 
+![Hinty Demo](https://github.com/tomaszs/Hintly/blob/master/images/hinty.gif "Hinty Demo")
+
 ### You have to recalculate stuff in your mind back and forth? Add Hinty:
 
 ```
 {
     "regex": "1rem",
     "message": "16px",
-    "fileRegex": ".*\\.scss"
+    "fileRegex": ".*\\.(css|scss)"
 },
 ```
 
@@ -18,7 +20,7 @@ Hinty lets you define intelligent hints that will display in your code in a matt
 {
     "regex": "flex-direction:",
     "message": "row - horizontal, column - vertical",
-    "fileRegex": ".*\\.scss"
+    "fileRegex": ".*\\.(css|scss)"
 },
 ```
 
@@ -36,11 +38,12 @@ Hinty lets you define intelligent hints that will display in your code in a matt
 ### You make same typos? Add Hinty:
 
 ```
-    {
+{
     "regex": "text-decoration: underscore;",
     "message": "It's underline",
-    "fileRegex": ".*\\.scss"
-    },
+    "fileRegex": ".*\\.(css|scss)"
+    "category": "css"
+},
 ```
 
 ### Want your team to follow coding guidelines? Add Hinty:
@@ -53,15 +56,6 @@ Hinty lets you define intelligent hints that will display in your code in a matt
     "category": "angular"
 },
 ```
-
-### And more!
-
-The extension comes with 80 rules for web development for CSS, SCSS, JavaScript, TypeScript, HTML, Angular, and React and 8 rules for SQL.
-Just copy them from rulesets folder.
-
-You can also write your own rules. It's easy and fast.
-
-Regex let's you build complex rules as well!
 
 ## Installation
 
@@ -76,24 +70,27 @@ Here you can see what you're looking for:
 
 https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
 
-## How to create a hint?
+## 🎁 Ready Made Hints For You
 
-### 1. Choose the level for your hint:
+Here you can find over a hundred ready to use rules:
 
-#### User level Hintly
+- [webdev.json (by Tomasz Smykowski)](https://github.com/tomaszs/Assistant/blob/master/rulesets/webdev.json)
+- [sql.json (by Chris Young)](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.json)
 
-* Press <kbd>F1</kbd> to show command palette
-* Write/find  "Preferences: Open Settings (JSON) and click it
+The clue of Hinty is that you can create easily your own hints. Hints for you programming language, framework, and coding guidelines. For yourself or your team! See how easy it is!
 
-#### Workspace level Hintly
+## Creating A Hint
 
-* If you don't have it, choose file "Save Workspace As..."
+### 1. Open settings
 
-* Press <kbd>F1</kbd> to show command palette
+Press <kbd>F1</kbd> to show command palette, and choose:
 
-* Write/find "Preferences: Open Workspace Settings (JSON)" and click it
+* Preferences: Open Settings (JSON), or
+* Preferences: Open Workspace Settings (JSON)
 
-### 2. Add your first hint
+**Pro-tip** Workspaces are great to create different hints for different projects. Open a folder with your project and choose "Save workspace as..." to create a workspace
+
+### 2. Write a hint
 
 Paste the code, so that the file looks like this:
 
@@ -112,96 +109,71 @@ Paste the code, so that the file looks like this:
 }
 ```
 
-### 3. Choose File -> New Text File, and Type "hello Hinty"
+### 3. Save
+
+Create a new file ```File``` -> ```New Text File```, type "hello Hinty" and ```Save```
+
+**Pro-tip** After you just have created a new file, you have to save it to see your first hint. Later you won't have to do it.
 
 ## Parameters
 
 Parameter|Meaning
 ---------|-----------
-regex|Finds places where message should be displayed. It's done with Regex
-modifiers|Regex modifiers. Default value: g. 
+regex|Finds places where message should be displayed
+modifiers|Regex modifiers. Default value: g 
 message|Message that should be displayed when the code fragment matches the regex
 fileRegex|Indicates on what files the hint should be checked. e.g. ```"fileRegex": ".*\\.ts"```, matches all TypeScript files
-category|Used to group hints visually
+category|Used to group hints visually in settings
 
-## Plain text instead of Regex
+## Plain text
 
-If you want to use a plain text instead of Regex, paste it here: https://www.regex-escape.com/online-regex-escaper.php. The page will escape Regex's special characters, so that you can use plain text without any effort.
+If you want to use a plain text instead of Regex, paste it here: https://www.regex-escape.com/online-regex-escaper.php.
 
-## Regex cheatsheet
+The page will escape Regex's special characters, so that you can use plain text without any effort.
 
-Regex|Meaning
----------|-----------
-.*|characters
-.|one character
-\\.|dot
-\s|whitespace
-\t|tab
-\n|new line
-[0-9]|any digit between 0 and 9
-[A-Za-z]|a latin alphabet character
-[^-]|any character except dash (-)
+## Regex
 
-Regex|Meaning
----------|-----------
-^|beginning of a string or line
-$|end of a string or line
+.* - characters\
+. - one character\
+\\\\. - dot\
+\s - whitespace\
+\t - tab\
+\n - new line\
+[0-9] - any digit between 0 and 9\
+[A-Za-z] - a latin alphabet character\
+[^-] - any character except dash (-)
 
-Regex|Meaning
----------|-----------
-cats?|matches "cat" and "cats"
-cat[1-3]*|matches "cat", but also "cat2" and "cat1323" etc.
-cat[1-3]+|matches "cat2" and "cat1323" etc. but not "cat"
-cat[0-9]{3}|matches cat046 or cat963 etc.
-(ts\|js)|matches "ts" and "js"
-\\(|open bracket
+^ - beginning of a string or line\
+$ - end of a string or line
 
-Modifier|Meaning
----------|-----------
-g|find all occurances in file
-m|multiline
-s|dot matches new line characters
-i|case insensitive
-gi|find all occurances case insensitively
+cats? - matches "cat" and "cats"\
+cat[1-3]* - matches "cat", but also "cat2" and "cat1323" etc.\
+cat[1-3]+ - matches "cat2" and "cat1323" etc. but not "cat"\
+cat[0-9]{3} - matches cat046 or cat963 etc.\
+(ts\|js) - matches "ts" and "js"\
+\\\\( - open bracket
 
-Learn more: https://www.rexegg.com/regex-quickstart.php
+g - find all occurrences in file\
+m - multiline\
+s - dot matches new line characters\
+i - case insensitive\
+gi - find all occurrences case insensitively
 
-## How to test hints?
+More Regex syntax: https://www.rexegg.com/regex-quickstart.php.
 
-I recommend this page: https://regex101.com/
+Regex testing: https://regex101.com/
 
-## 🎁 Bonus  - Ready Hints For You
+## Success stories
 
-Here you can find over a hundredred ready to use rules:
-
-- [webdev.json (by Tomasz Smykowski)](https://github.com/tomaszs/Assistant/blob/master/rulesets/webdev.json)
-- [sql.json (by Chris Young)](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.json)
-
-## Licence
-
-You can:
-
-- install extension,
-- use the extension,
-- use rules
-
-for free for whatever you want, including commercial use
-
-## FAQ
-
-### Where I can read about how softwar engineers use the extension?
-
-Please read an articles of rules authors. They covers ideas for rules and concept of how to write them: 
-
-Angular, CSS, JS:
+Webdev:
 https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
 
-SQL (by Chris Young):
+SQL:
 https://dev.to/ronsoak/doing-the-impossible-using-assistant-to-make-a-sql-linter-and-how-you-can-make-it-lint-whatever-you-want-2ke2
 
-### What's the difference between Hinty and AIs like ChatGPT or Copilot?
+## Hinty vs AI
 
-Hinty is like AI on steroids:
+Hinty is like AI on steroids (AI+):
 
 1. Gives you a hint in 1ms
 2. You don't have to ask Hinty to help you
@@ -209,13 +181,13 @@ Hinty is like AI on steroids:
 4. Hinty doesn't lie
 5. Hinty is 100% accurate every time
 
-### What is the difference between Hinty and SonarLint?
+## Hinty vs SonarLint
 
 1. You don't need to connect to a server to use Hinty making setup as easy as installing the extension
 2. Writing rules is extremely easy with Hinty, so everyone can do it right away
-3. Messages show up right above the code you write in miliseconds. You can immediately fix your code
+3. Messages show up right above the code you write in milliseconds. You can immediately fix your code
 
-### What is the difference between Hinty and regular Linters
+## Hinty vs linters
 
 1. Hinty is realtime. You don't need to wait for the linting process to finish. Hinty makes the coding process a much smoother experience
 2. Messages show up above the code you write when you write it. You don't need to look into "Problems tab" and navigate back to the place where situation occurred. So you don't loose an eye off the code you write
@@ -242,6 +214,23 @@ Hinty is like AI on steroids:
 6. login to extension manager (with b@)
 7. click three dots next to the package in the list
 8. update package
+
+
+## License
+
+You can:
+
+- install extension,
+- use the extension,
+- use rules with the extension
+
+for private or commercial projects.
+
+You can't:
+
+- use rules to create competing stuff
+- use rules for machine learning
+- re-publish or share rules publicly without explicit attribution
 
 ## Authors
 
