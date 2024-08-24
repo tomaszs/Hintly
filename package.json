@@ -10,7 +10,7 @@
         "regex"
     ],
     "icon": "images/hinty.png",
-    "description": "Never do the same mistake again",
+    "description": "AI+ Hints For Your Code In 1 Millisecond",
     "version": "1.0.1",
     "publisher": "tomasz-smykowski",
     "repository": {
