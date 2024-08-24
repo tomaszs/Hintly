@@ -9,6 +9,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Second Readme rewrite
 - Removed unnecessary images
 - Added GIF illustration
+- Added logo to Readme
 
 ## [1.0.0] 23.08.2024
 
