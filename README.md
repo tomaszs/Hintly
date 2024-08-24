@@ -1,6 +1,6 @@
 ## ✨ Hinty - AI+ Hints For Your Code In 1 Millisecond
 
-![Hinty Logo](https://github.com/tomaszs/Hintly/blob/master/images/hinty.png "Hinty Logo")
+<img src="https://github.com/tomaszs/Hintly/blob/master/images/hinty.png" width="64"/>
 
 Hinty lets you define intelligent hints that will display in your code in a matter of 1 millisecond. Works for every project
 
