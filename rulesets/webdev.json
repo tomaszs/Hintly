@@ -1,0 +1,399 @@
+[
+    {
+        "regex": ": :",
+        "message": "Spaced double colon syntax error",
+        "category": "general"
+    },
+    {
+        "regex": "opacity:\\s*[0-9]*%;",
+        "message": "Opacity can be a value between 0 and 1, NOT %",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "cursor\\?",
+        "message": "Default value is: auto",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "border-radius: unset;",
+        "message": "Unset is improper value. The proper value is 0",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "justify-content: left;",
+        "message": "Prepend style with justify-content: flex-start; to satisfy IE 11",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "justify-content: end;",
+        "message": "Prepend style with justify-content: flex-end; to satisfy IE 11",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "justify-content: space-evenly;",
+        "message": "Prepend style with justify-content: space-around; to satisfy IE 11",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "margin: ",
+        "message": "Order: 1) topandbottom leftandright 2) top rightandleft bottom 3) top right bottom left",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "padding: ",
+        "message": "Order: 1) topandbottom leftandright 2) top rightandleft bottom 3) top right bottom left",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "@media",
+        "message": "Usage: eg. @media screen and (max-width: 700px)",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": " 0px",
+        "message": "Use 0 without px instead",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "nth-of",
+        "message": "Starts with 1",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "color #[0-9a-fA-F]{3}",
+        "message": "Missing colon between property name and HEX value",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": ":focus[^-]",
+        "message": "Use focus-visible",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "pointer-events: none;",
+        "message": "Pointer-events: none disables cursor settings on an element. If it's the case: remove it, and check for disabled in onClick event. Or use these on two separate elements to work around",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "@import",
+        "message": "maybe deprecated, possible alternatives: @forward or @use",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "calc.*#{",
+        "message": "shouldn't use interpolation for calc with numeric values",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "flex-direction:",
+        "message": "row - horizontal, column - vertical",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "\"",
+        "message": "use ' instead of \"",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "border: ",
+        "message": "border: color style width",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "text-decoration: underscore;",
+        "message": "It's underline",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "0.125rem",
+        "message": "2px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "0.25rem",
+        "message": "2px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "0.5rem",
+        "message": "8px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "0.625rem",
+        "message": "10px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "0.75rem",
+        "message": "12px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "1rem",
+        "message": "16px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "1.5rem",
+        "message": "24px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "2rem",
+        "message": "32px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "3rem",
+        "message": "48px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "4rem",
+        "message": "64px",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "&_[A-Za-z]+",
+        "message": "BEM separator should have two underscores: __, not _",
+        "fileRegex": ".*\\.(css|scss)",
+        "category": "css"
+    },
+    {
+        "regex": "@Input\\(\\) .*: false;",
+        "message": "Type of input should be boolean here, not false",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "\\*ngIf=\"\"",
+        "message": "ngIf can not be empty",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "if \\(\\!changes\\.",
+        "message": "In ngOnChanges? It does not check if value is not provided for property",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "unsubscribe\\(\\)",
+        "message": "Use pipe(takeUntil(this.onDestroy$)) not unsubscribe",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "\\.subscribe\\(\\)",
+        "message": "Don't forget to unsubscribe with pipe takeUntil",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "@Output()",
+        "message": "Usage: @Output() name = new EventEmitter<void>();",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "[\t ]{1}@ViewChild",
+        "message": "Usage: eg. \"@ViewChild('nodeId') container: ElementRef;\" Mark node in html with #nodeId",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "nativeElement\\.width",
+        "message": "Should be nativeElement.style.width",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "nativeElement\\.height",
+        "message": "Should be nativeElement.style.height",
+        "fileRegex": ".*\\.component\\.ts",
+        "category": "angular"
+    },
+    {
+        "regex": "OnAfterViewInit",
+        "message": "it should be ngAfterViewInit",
+        "fileRegex": ".*\\.component\\.html",
+        "category": "angular"
+    },
+    {
+        "regex": " ngIf",
+        "message": "It should be *ngIf\"",
+        "fileRegex": ".*\\.component\\.html",
+        "category": "angular"
+    },
+    {
+        "regex": "ngClass",
+        "message": "if conditional: change to class and [class.something]='something' if possible",
+        "fileRegex": ".*\\.component\\.html",
+        "category": "angular"
+    },
+    {
+        "regex": "\\*ngFor=",
+        "message": "Usage: *ngFor=\"let item of items; index as i\", [param]=\"item.prop\"",
+        "fileRegex": ".*\\.component\\.html",
+        "category": "angular"
+    },
+    {
+        "regex": "^::ng-deep.*$",
+        "message": "Prepend with :host, so that styles won't leak",
+        "modifiers": "gm",
+        "fileRegex": ".*\\.component\\.(css|scss)",
+        "category": "angular"
+    },
+    {
+        "regex": "::host",
+        "message": "Change ::host to :host",
+        "fileRegex": ".*\\.component\\.(css|scss)",
+        "category": "angular"
+    },
+    {
+        "regex": "::ng-deep",
+        "message": "maybe prepend ::ng-deep with :host to prevent leaks",
+        "fileRegex": ".*\\.component\\.(css|scss)",
+        "category": "angular"
+    },
+    {
+        "regex": "[A-Za-z]*=\"'.*'\"",
+        "message": "can be simplified to x=\"y\"",
+        "fileRegex": ".*\\.component\\.html",
+        "category": "angular"
+    },
+    {
+        "regex": "any",
+        "message": "Don't use any, nor $any",
+        "fileRegex": ".*\\.ts",
+        "category": "typescript"
+    },
+    {
+        "regex": "<React.Fragment>",
+        "message": "Use <> instead",
+        "fileRegex": ".*\\.(jsx|tsx)",
+        "category": "react"
+    },
+    {
+        "regex": "componentWillMount",
+        "message": "Use componentDidMount. componentWillMount deprecated in 2018",
+        "fileRegex": ".*\\.(jsx|tsx)",
+        "category": "react"
+    },
+    {
+        "regex": "\\(\\) \\[",
+        "message": "Function body should be in curly brackets not square ones",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": "export class Tree ",
+        "message": "Already declared in @angular/router/src/utils/tree. Use other name for convinience",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)$",
+        "category": "javascript"
+    },
+    {
+        "regex": "export class Node ",
+        "message": "Already used by DOM API. Use other name for convinience",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": "export class Location ",
+        "message": "Already used by Location API. Use other name for convinience",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": "export type Location ",
+        "message": "Already used by Location API. Use other name for convinience",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": "export type Node ",
+        "message": "Already used by DOM API. Use other name for convinience",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": "var ",
+        "message": "Don't use var. Use let or const",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": " == ",
+        "message": "Use === instead",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": " != ",
+        "message": "Use !== instead",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": "[;}]{1}\\n[ \\t]*return",
+        "message": "Add empty line before return",
+        "modifiers": "s",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": " = Date\\(",
+        "message": "Prepend Date with \"new\"",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": "new Dayjs()",
+        "message": "New Dayjs() is created with dayjs() without new operator",
+        "fileRegex": ".*\\.(js|ts|jsx|tsx)",
+        "category": "javascript"
+    },
+    {
+        "regex": "class=\\'",
+        "message": "Use double quotes for node properties",
+        "fileRegex": ".*\\.(html|jsx|tsx)",
+        "category": "html"
+    },
+    {
+        "regex": "clas=\"",
+        "message": "Spelling mistake. There is 'clas'. Should be 'class'",
+        "fileRegex": ".*\\.(html|jsx|tsx)",
+        "category": "html"
+    },
+]
