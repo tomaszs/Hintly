@@ -141,10 +141,14 @@ Regex|Meaning
 [0-9]|any digit between 0 and 9
 [A-Za-z]|a latin alphabet character
 [^-]|any character except dash (-)
-|
+
+Regex|Meaning
+---------|-----------
 ^|beginning of a string or line
 $|end of a string or line
-|
+
+Regex|Meaning
+---------|-----------
 cats?|matches "cat" and "cats"
 cat[1-3]*|matches "cat", but also "cat2" and "cat1323" etc.
 cat[1-3]+|matches "cat2" and "cat1323" etc. but not "cat"
