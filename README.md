@@ -1,4 +1,4 @@
-## ✨ Hinty - Intelligent Hints For Your Code In 1 Millisecond
+## ✨ Hinty - AI+ Hints For Your Code In 1 Millisecond
 
 Hinty lets you define intelligent hints that will display in your code in a matter of 1 millisecond. Works for every project
 
