@@ -1,39 +1,46 @@
 {
-    "regex": "(,)(\\s*\\W*)(from)",
-    "message": "Reminder: you don't need a comma on the last column",
-    "modifiers": "sig"
-},
-{
-    "regex": "(join)(\\s*\\w*)(\\s*\\w*\\s*)(and)",
-    "message": "An ON keyword must follow a join condition",
-    "modifiers": "sig"
-},
-{
-    "regex": "(with\\s)(\\w*\\s*)(as)",
-    "message": "Please refrain from using CTE's in production code. They are bad for redshift.",
-    "modifiers": "sig"
-},
-    "regex": "(join\\s)(\\w*\\s*\\w*\\s*)(using)",
-    "message": "Do not use USING when joining tables, use ON.",
-    "modifiers": "sig"
-},
-{
-    "regex": "(limit\\s*\\d*\\s*)(order|group|where|having)",
-    "message": "Limit should be the last keyword in the query.",
-    "modifiers": "sig"
-},
-{
-    "regex": "commit;",
-    "message": "I can ensure you that Redshift does not have commitment issues, you do not need to write commit.",
-    "modifiers": "sig"
-},
-{
-    "regex": "(union\\s*)(select)",
-    "message": "I can't think a valid reason to use union. You should always be using union all. ",
-    "modifiers": "sig"
-},
-{
-    "regex": "char\\W1\\W",
-    "message": "You should be using a boolean if you are building a char with 1 space.",
-    "modifiers": "sig"
-},
+    "assistant": {
+        "rules": [
+            {
+                "regex": "(,)(\\s*\\W*)(from)",
+                "message": "Reminder: you don't need a comma on the last column",
+                "modifiers": "sig"
+            },
+            {
+                "regex": "(join)(\\s*\\w*)(\\s*\\w*\\s*)(and)",
+                "message": "An ON keyword must follow a join condition",
+                "modifiers": "sig"
+            },
+            {
+                "regex": "(with\\s)(\\w*\\s*)(as)",
+                "message": "Please refrain from using CTE's in production code. They are bad for redshift.",
+                "modifiers": "sig"
+            },
+            {
+                "regex": "(join\\s)(\\w*\\s*\\w*\\s*)(using)",
+                "message": "Do not use USING when joining tables, use ON.",
+                "modifiers": "sig"
+            },
+            {
+                "regex": "(limit\\s*\\d*\\s*)(order|group|where|having)",
+                "message": "Limit should be the last keyword in the query.",
+                "modifiers": "sig"
+            },
+            {
+                "regex": "commit;",
+                "message": "I can ensure you that Redshift does not have commitment issues, you do not need to write commit.",
+                "modifiers": "sig"
+            },
+            {
+                "regex": "(union\\s*)(select)",
+                "message": "I can't think a valid reason to use union. You should always be using union all. ",
+                "modifiers": "sig"
+            },
+            {
+                "regex": "char\\W1\\W",
+                "message": "You should be using a boolean if you are building a char with 1 space.",
+                "modifiers": "sig"
+            }
+        ]
+    }
+}

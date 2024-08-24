@@ -1,10 +1,11 @@
 ## ✨ Hinty - AI+ Hints For Your Code In 1 Millisecond
 
-<img src="https://github.com/tomaszs/Hintly/blob/master/images/hinty.png" width="64"/>
+<img src="https://polishwords.com.pl/dev/hinty/hinty.png" width="64"/>
 
 Hinty lets you define intelligent hints that will display in your code in a matter of 1 millisecond. Works for every project
 
-![Hinty Demo](https://github.com/tomaszs/Hintly/blob/master/images/hinty.gif "Hinty Demo")
+![Hinty Demo](https://polishwords.com.pl/dev/hinty/hinty.gif "Hinty Demo")
+[Enlarge](https://polishwords.com.pl/dev/hinty/hinty.gif)
 
 ### You have to recalculate stuff in your mind back and forth? Add Hinty:
 
@@ -12,7 +13,7 @@ Hinty lets you define intelligent hints that will display in your code in a matt
 {
     "regex": "1rem",
     "message": "16px",
-    "fileRegex": ".*\\.(css|scss)"
+    "fileRegex": "^.*\\.(css|scss)$"
 },
 ```
 
@@ -22,7 +23,7 @@ Hinty lets you define intelligent hints that will display in your code in a matt
 {
     "regex": "flex-direction:",
     "message": "row - horizontal, column - vertical",
-    "fileRegex": ".*\\.(css|scss)"
+    "fileRegex": "^.*\\.(css|scss)$"
 },
 ```
 
@@ -32,7 +33,7 @@ Hinty lets you define intelligent hints that will display in your code in a matt
 {
     "regex": ":focus[^-]",
     "message": "Use focus-visible",
-    "fileRegex": ".*\\.(css|scss)",
+    "fileRegex": "^.*\\.(css|scss)$",
     "category": "css"
 },
 ```
@@ -43,7 +44,7 @@ Hinty lets you define intelligent hints that will display in your code in a matt
 {
     "regex": "text-decoration: underscore;",
     "message": "It's underline",
-    "fileRegex": ".*\\.(css|scss)"
+    "fileRegex": "^.*\\.(css|scss)$"
     "category": "css"
 },
 ```
@@ -54,7 +55,7 @@ Hinty lets you define intelligent hints that will display in your code in a matt
 {
     "regex": "ngClass",
     "message": "if conditional: change to class and [class.something]='something' if possible",
-    "fileRegex": ".*\\.component\\.html",
+    "fileRegex": "^.*\\.component\\.html$",
     "category": "angular"
 },
 ```
@@ -100,7 +101,7 @@ Paste the code, so that the file looks like this:
             {
                 "regex": "hello Hinty",
                 "message": "hello Developer :-)",
-                "fileRegex": ".*\\.txt"
+                "fileRegex": "^.*\\.txt$"
             },
         ]
     }
@@ -120,7 +121,7 @@ Parameter|Meaning
 regex|Finds places where message should be displayed
 modifiers|Regex modifiers. Default value: g 
 message|Message that should be displayed when the code fragment matches the regex
-fileRegex|Indicates on what files the hint should be checked. e.g. ```"fileRegex": ".*\\.ts"```, matches all TypeScript files
+fileRegex|Indicates on what files the hint should be checked. e.g. ```"fileRegex": "^.*\\.ts$"```, matches all TypeScript files
 category|Used to group hints visually in settings
 
 ## Plain Text
@@ -130,6 +131,8 @@ If you want to use a plain text instead of Regex, [paste it here](https://www.re
 The page will escape Regex's special characters, so that you can use plain text without any effort.
 
 ## Regex
+
+### Syntax
 
 .* - characters\
 . - one character\
@@ -151,16 +154,18 @@ cat[0-9]{3} - matches cat046 or cat963 etc.\
 (ts\|js) - matches "ts" and "js"\
 \\\\( - open bracket
 
+### Modifiers
+
 g - find all occurrences in file\
 m - multiline\
 s - dot matches new line characters\
 i - case insensitive\
 gi - find all occurrences case insensitively
 
-[Regex Syntax](https://www.rexegg.com/regex-quickstart.php)\
-[Regex Testing](https://regex101.com/)
+[More](https://www.rexegg.com/regex-quickstart.php)\
+[Testing](https://regex101.com/)
 
-## Success stories
+## Success Stories
 
 [Web Development](https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab)\
 [Database Queries](https://dev.to/ronsoak/doing-the-impossible-using-assistant-to-make-a-sql-linter-and-how-you-can-make-it-lint-whatever-you-want-2ke2)

@@ -11,7 +11,7 @@
     ],
     "icon": "images/hinty.png",
     "description": "AI+ Hints For Your Code In 1 Millisecond",
-    "version": "1.0.3",
+    "version": "1.0.7",
     "publisher": "tomasz-smykowski",
     "repository": {
         "type": "git",
@@ -69,7 +69,7 @@
     },
     "scripts": {
         "publish": "vsce package && vsce publish minor",
-        "build": "vsce package",
+        "build": "vsce package --allow-star-activation",
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "lint": "tslint -p ./",

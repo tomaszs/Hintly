@@ -4,7 +4,7 @@ All notable changes to the "Hinty" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [1.0.3] 24.08.2024
+## [1.0.7] 24.08.2024
 
 - Second Readme rewrite
 - Removed unnecessary images
