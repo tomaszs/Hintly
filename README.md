@@ -68,18 +68,14 @@ Hinty lets you define intelligent hints that will display in your code in a matt
   * MacOS: <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>X</kbd>
 * Install "Hinty"
 
-Here you can see what you're looking for:
-
-https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant
+[Hinty in VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=tomasz-smykowski.assistant)
 
 ## 🎁 Ready Made Hints For You
 
 Here you can find over a hundred ready to use rules:
 
-- [webdev.json (by Tomasz Smykowski)](https://github.com/tomaszs/Assistant/blob/master/rulesets/webdev.json)
-- [sql.json (by Chris Young)](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.json)
-
-The clue of Hinty is that you can create easily your own hints. Hints for you programming language, framework, and coding guidelines. For yourself or your team! See how easy it is!
+- [Web Development by Tom Smykowski](https://github.com/tomaszs/Assistant/blob/master/rulesets/webdev.json)
+- [SQL by Chris Young](https://github.com/tomaszs/Assistant/blob/master/rulesets/sql.json)
 
 ## Creating A Hint
 
@@ -129,7 +125,7 @@ category|Used to group hints visually in settings
 
 ## Plain Text
 
-If you want to use a plain text instead of Regex, paste it here: https://www.regex-escape.com/online-regex-escaper.php.
+If you want to use a plain text instead of Regex, [paste it here](https://www.regex-escape.com/online-regex-escaper.php)
 
 The page will escape Regex's special characters, so that you can use plain text without any effort.
 
@@ -161,17 +157,13 @@ s - dot matches new line characters\
 i - case insensitive\
 gi - find all occurrences case insensitively
 
-More Regex syntax: https://www.rexegg.com/regex-quickstart.php.
-
-Regex testing: https://regex101.com/
+[Regex Syntax](https://www.rexegg.com/regex-quickstart.php)\
+[Regex Testing](https://regex101.com/)
 
 ## Success stories
 
-Webdev:
-https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab
-
-SQL:
-https://dev.to/ronsoak/doing-the-impossible-using-assistant-to-make-a-sql-linter-and-how-you-can-make-it-lint-whatever-you-want-2ke2
+[Web Development](https://medium.com/@tomaszs2/8-visual-studio-code-assistant-rules-for-nasty-angular-bugs-9f186277e0ab)\
+[Database Queries](https://dev.to/ronsoak/doing-the-impossible-using-assistant-to-make-a-sql-linter-and-how-you-can-make-it-lint-whatever-you-want-2ke2)
 
 ## Hinty vs AI
 
