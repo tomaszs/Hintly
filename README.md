@@ -10,54 +10,44 @@ Hinty lets you define intelligent hints that will display in your code in a matt
 ### You have to recalculate stuff in your mind back and forth? Add Hinty:
 
 ```
-{
-    "regex": "1rem",
-    "message": "16px",
-    "fileRegex": "^.*\\.(css|scss)$"
-},
+"regex": "1rem",
+"message": "16px",
+"fileRegex": "^.*\\.(css|scss)$"
 ```
 
 ### Have to re-check documentation every time you use some API? Add Hinty:
 
 ```
-{
-    "regex": "flex-direction:",
-    "message": "row - horizontal, column - vertical",
-    "fileRegex": "^.*\\.(css|scss)$"
-},
+"regex": "flex-direction:",
+"message": "row - horizontal, column - vertical",
+"fileRegex": "^.*\\.(css|scss)$"
 ```
 
 ### You want to spot legacy code? Add Hinty:
 
 ```
-{
-    "regex": ":focus[^-]",
-    "message": "Use focus-visible",
-    "fileRegex": "^.*\\.(css|scss)$",
-    "category": "css"
-},
+"regex": ":focus[^-]",
+"message": "Use focus-visible",
+"fileRegex": "^.*\\.(css|scss)$",
+"category": "css"
 ```
 
 ### You make same typos? Add Hinty:
 
 ```
-{
-    "regex": "text-decoration: underscore;",
-    "message": "It's underline",
-    "fileRegex": "^.*\\.(css|scss)$"
-    "category": "css"
-},
+"regex": "text-decoration: underscore;",
+"message": "It's underline",
+"fileRegex": "^.*\\.(css|scss)$"
+"category": "css"
 ```
 
 ### Want your team to follow coding guidelines? Add Hinty:
 
 ```
-{
-    "regex": "ngClass",
-    "message": "if conditional: change to class and [class.something]='something' if possible",
-    "fileRegex": "^.*\\.component\\.html$",
-    "category": "angular"
-},
+"regex": "ngClass",
+"message": "if conditional: change to class and [class.something]='something' if possible",
+"fileRegex": "^.*\\.component\\.html$",
+"category": "angular"
 ```
 
 ## Installation
@@ -166,8 +156,20 @@ s - dot matches new line characters\
 i - case insensitive\
 gi - find all occurrences case insensitively
 
-[More](https://www.rexegg.com/regex-quickstart.php)\
-[Testing](https://regex101.com/)
+### Negative search
+
+To check if a file is missing "something" that should be there use this:
+
+```
+"regex": "^(?!.*something).*,
+"message": "There's no something"
+"modifiers": "s"
+```
+
+The message will appear at the top of the file
+
+[More about Regex](https://www.rexegg.com/regex-quickstart.php)\
+[An online tool to test Regex](https://regex101.com/)
 
 ## Success Stories
 
