@@ -224,7 +224,6 @@ Hinty is like AI on steroids:
 ## Notes for contributors (you probably don't need these)
 
 ### Installation
-- Use nvm 14.15.0
 - If you face "Error: Failed to unzip downloaded vscode at", during npm run test go to ".vscode-test" folder and extract ZIP manually
 - If you face "Running extension tests from the command line is currently only supported if no other instance of Code is running" close VSCode and run npm run test from command line / bash
 
@@ -238,9 +237,10 @@ Hinty is like AI on steroids:
 1. Update README and CHANGELOG
 2. Update version in package.json
 3. Commit and push (login to GitHub)
-4. vsce package
-5. login to extension manager (with b@)
-6. update package
+4. npm install -g @vscode/vsce
+5. npm run build
+6. login to extension manager (with b@)
+7. update package
 tbd: how to do it via vsce publish
 
 ## Authors

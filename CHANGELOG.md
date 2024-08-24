@@ -12,6 +12,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Reorganized rulesets
 - Grouped webdev rules into webdev.json for convinience (JavaScript, TypeScript, CSS, SCSS, Angular, React). Since rulesets have file extension narrowers, it's ok to copy all rules, because it won't hinder performance. SQL is separately because idk what extensions should it handle
 - Rewritten Readme.md file with Regex cheatsheet and more
+- New logo
 
 ## [0.17.0]
 
