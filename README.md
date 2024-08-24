@@ -125,7 +125,7 @@ message|Message that should be displayed when the code fragment matches the rege
 fileRegex|Indicates on what files the hint should be checked. e.g. ```"fileRegex": ".*\\.ts"```, matches all TypeScript files
 category|Used to group hints visually in settings
 
-## Plain text
+## Plain Text
 
 If you want to use a plain text instead of Regex, paste it here: https://www.regex-escape.com/online-regex-escaper.php.
 
@@ -193,7 +193,7 @@ Hinty is like AI on steroids (AI+):
 2. Messages show up above the code you write when you write it. You don't need to look into "Problems tab" and navigate back to the place where situation occurred. So you don't loose an eye off the code you write
 3. Writing Hinty rules is extremely easy. Everyone can do it right away
 
-## Notes for contributors (you probably don't need these)
+## Notes For Contributors (you probably don't need these)
 
 ### Installation
 - If you face "Error: Failed to unzip downloaded vscode at", during npm run test go to ".vscode-test" folder and extract ZIP manually
